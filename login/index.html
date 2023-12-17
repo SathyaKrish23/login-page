@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+</head>
+<body>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <section>
+        <input type="checkbox" id="toggle">
+        <div class="box">
+            <div class="box-inner" id="box-inner">
+                <div class="login p-3">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 lap">
+                            <h1>Welcome Back</h1>
+                            <p>Join us and explore more! Sign up now to get started.</p>
+                           <label for="toggle" class="mb-3 button-19" role="button">Register</label>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2 class="text-center fw-bolder heading">LOGIN</h2>
+                            <form action="" class="mt-4" >
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" placeholder="you@example.com" class="input1">
+                                </div>
+                                <div class="password-container">
+                                    <label for="password">Password</label>
+                                    <input type= "password" name="password" placeholder="Password" id="passwordInput" >
+                                    <span class="toggle-password" ><img src="./hide.png" alt="eye" onclick="passwordToggle()" id="eye" ></span>
+                                </div>
+                                <button class="button-24 mt-3 mb-3" role="button">Login</button>
+                                <div class="phone">
+                                    <hr>
+                                    <p>Doesn't have an account yet ? </p> <label for="toggle" class="button-19" role="button">Register</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
+                </div>
+                <div class="register p-3">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2 class="text-center fw-bolder heading">REGISTER</h2>
+                            <form action="" class="mt-4" >
+                                <div>
+                                    <label for="role">Role</label>
+                                    <select name="role" id="">
+                                        <option value="customer" selected>Customer</option>
+                                        <option value="retailer">Retailer</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" placeholder="Username">
+                                </div>
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" placeholder="you@example.com">
+                                </div>
+                                <div>
+                                    <label for="password">New Password</label>
+                                    <input type="text" name="password" placeholder="Password" >
+                                   
+                                </div>
+                                
+                                <button class="button-24 mt-3 mb-3" role="button">Register</button>
+                                <div class="phone">
+                                    <hr>
+                                    <p>Already have an account yet ? </p> <label for="toggle" class="button-19 flip" role="button">Login</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 lap">
+                            <h1>Hi Buddy</h1>
+                            <p>Unlock a world of possibilities with just a click-your journey begins here.</p>
+                            <label for="toggle" class="mb-3 button-19" role="button"  >Login</label>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+</body>
+</html>
